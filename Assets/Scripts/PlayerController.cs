@@ -30,4 +30,11 @@ public class PlayerController : MonoBehaviour
         // 정해준 속도를 리지드바디에 입혀준다.
         playerRigidbody.linearVelocity = newVelocity;
     }
+
+    // 플레이어가 총알에 맞았을 때 실행할 함수
+    public void Die()
+    {
+        // 게임 오브젝트를 비활성화한다.
+        gameObject.SetActive(true);
+    }
 }
