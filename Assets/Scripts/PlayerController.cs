@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         // 게임 오브젝트를 비활성화한다.
-        gameObject.SetActive(true);
+        gameObject.SetActive(false);
 
         // 현재 씬에서 GameManager를 갖고 있는 게임 오브젝트를 찾는다.
         GameManager gameManager = FindFirstObjectByType<GameManager>();
